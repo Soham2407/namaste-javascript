@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @media screen and (max-width: 500px) {
+        body {
+          background-color: lightgray;
+        }
+      }
+
+      @media screen and (min-width: 501px) and (max-width: 720px) {
+        body {
+          background-color: lightcyan;
+        }
+      }
+
+      .container {
+        border: 1px solid green;
+      }
+
+      .box1 {
+        background-color: lightcoral;
+        float: left;
+        width: 32%;
+        margin: 10px;
+      }
+      .box2 {
+        background-color: lightgreen;
+        float: left;
+        width: 32%;
+        margin: 10px;
+      }
+      .box3 {
+        background-color: lightseagreen;
+        float: left;
+        width: 32%;
+        margin: 10px;
+      }
+
+      .container::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .parent {
+        width: 600px;
+        height: 500px;
+        border: 1px solid red;
+        position: relative;
+      }
+
+      .child {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Programs</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos excepturi
+      ipsa tempore enim ipsam esse impedit inventore nesciunt neque pariatur.
+    </p>
+
+    <h2>courses</h2>
+    <div class="container">
+      <div class="box1">
+        <h3>title</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magni
+          est quod quos non inventore asperiores, voluptatem autem pariatur
+          labore accusamus quas explicabo, placeat odit aliquid repudiandae
+          animi! Laborum, cupiditate?
+        </p>
+      </div>
+
+      <div class="box2">
+        <h3>title</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magni
+          est quod quos non inventore asperiores, voluptatem autem pariatur
+          labore accusamus quas explicabo, placeat odit aliquid repudiandae
+          animi! Laborum, cupiditate?
+        </p>
+      </div>
+
+      <div class="box3">
+        <h3>title</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magni
+          est quod quos non inventore asperiores, voluptatem autem pariatur
+          labore accusamus quas explicabo, placeat odit aliquid repudiandae
+          animi! Laborum, cupiditate?
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+        explicabo vero delectus, magnam ratione autem corrupti odio atque,
+        aspernatur minima tempore quia voluptate rerum sint accusamus quod.
+        Nostrum commodi consequatur ullam voluptatum nam ipsam asperiores unde
+        quis eius odit adipisci porro rerum qui itaque quo, deleniti nisi?
+        Voluptatibus, doloribus minima totam pariatur beatae voluptatem
+        molestias reprehenderit modi voluptates voluptatum amet iure aliquid cum
+        magni delectus adipisci quia quisquam temporibus. Obcaecati odio
+        repellat dolorem, maiores perferendis quod ab, exercitationem maxime
+        totam, similique soluta non alias debitis distinctio aspernatur
+        doloribus? Nesciunt esse veritatis ut ipsa. Voluptatem ratione unde,
+        accusantium fugiat fugit quia.
+      </p>
+    </div>
+
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+
+    <script src="06-string-palindrome.js"></script>
+  </body>
+</html>
